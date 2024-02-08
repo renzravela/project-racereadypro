@@ -1,11 +1,13 @@
-import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import Headers from "./components/Headers"
 
 function App() {
 
   return (
-    <>
-    <h1>Hello Worlds</h1>
-    </>
+    <div>
+      <Headers/>
+    </div>
   )
 }
 
