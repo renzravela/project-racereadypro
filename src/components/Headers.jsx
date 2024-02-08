@@ -4,23 +4,24 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Image from "react-bootstrap/Image";
 import logo from "../assets/front-logo.png";
+import '../css/custom.css';
 
 const Headers = () => {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg" className="header-main">
         <Container>
-          <Image src={ logo } className="me-3"/>
-          <Navbar.Brand href="#"><h3>RaceReady Pro:F1</h3></Navbar.Brand>
+          <Navbar.Brand className="front-logo">
+              <Image src={ logo } className=""/>
+          </Navbar.Brand>
+          <Navbar.Brand href="#" className="fs-2 fw-bold text-light">RaceReady Pro:F1</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="justify-content-end">
             <Nav className="ms-auto">
-              <Nav.Link href="#"><h5>Pilots</h5></Nav.Link>
-              <Nav.Link href="#"><h5>Cars & Livery</h5></Nav.Link>
-              <Nav.Link href="#"><h5>Tracks</h5></Nav.Link>
-              <NavDropdown title="More" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#">About ReadyRace Pro</NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link href="#" className="text-light fs-6 fw-bold">Drivers</Nav.Link>
+              <Nav.Link href="#" className="text-light fs-6 fw-bold">Cars & Livery</Nav.Link>
+              <Nav.Link href="#" className="text-light fs-6 fw-bold">Tracks</Nav.Link>
+              <Nav.Link href="#" className="text-light fs-6 fw-bold">About</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
