@@ -1,8 +1,17 @@
 .header-main{
-    background-color: rgb(208, 12, 22);
+    background-color: #9c0814;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
 }
 
 .front-logo{
     padding: 0;
+}
+
+.footer-wrapper{
+    background-color: #9c0814;
+}
+
+.wrapper{
+    border: 1px solid red;
+    padding: 10px;
 }
